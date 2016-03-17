@@ -8,11 +8,11 @@ hotel_list = []
 availability_list = []
 hotels_from_txt = "artefatos/hoteis.txt"
 availability_from_txt = "artefatos/disp.txt"
+preloaded_hotel_list_as_json = ""
 
 @app.route("/hotels")
 def get_hotels_list():
-    print "running /hotels"
-    return jsonpickle.encode(hotel_list, unpicklable=False)
+    return preloaded_hotel_list_as_json
 
 @app.route("/availability")
 def get_availability():
@@ -62,4 +62,5 @@ for availability in availability_list:
 
 print ">>> Total of hotels: {0}".format(len(hotel_list))
 print ">>> Total of availability: {0}".format(len(availability_list))
-app.run()
+preloaded_hotel_list_as_json = jsonpickle.encode(hotel_list, unpicklable=False) # simple preload 
+app.run(port=8000)

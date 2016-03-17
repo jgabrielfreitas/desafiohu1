@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HotelDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/image_view_size"
+        android:layout_height="@dimen/image_view_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/default_space"
+        android:src="@drawable/ic_hotel_black_48dp" />
+
+    <TextView
+        android:id="@+id/hotelDetailsNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginRight="@dimen/default_space"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center_vertical"
+        android:text="@string/boulevard"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/image_view_size"
+        android:layout_height="@dimen/image_view_size"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:src="@drawable/ic_location_on_black_48dp" />
+
+    <TextView
+        android:id="@+id/hotelDetailsLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/hotelDetailsNameTextView"
+        android:layout_alignStart="@+id/hotelDetailsNameTextView"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:text="Grajaú"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:layout_marginTop="@dimen/default_space"
+        android:id="@+id/datesListView"
+        android:divider="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2" />
+
+</RelativeLayout>

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">HUAndroid</string>
+    <string name="app_name">Hotéis</string>
+    <string name="boulevard">Boulevard</string>
+    <string name="hotel_details">Detalhes do Hotel</string>
+    <string name="available">DISPONÍVEL</string>
+    <string name="not_available">NÃO DISPONÍVEL</string>
 </resources>
